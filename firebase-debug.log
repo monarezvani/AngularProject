@@ -1,0 +1,25 @@
+[debug] [2020-05-18T14:53:02.805Z] ----------------------------------------------------------------------
+[debug] [2020-05-18T14:53:02.807Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Mona\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-05-18T14:53:02.807Z] CLI Version:   8.2.0
+[debug] [2020-05-18T14:53:02.807Z] Platform:      win32
+[debug] [2020-05-18T14:53:02.807Z] Node Version:  v13.5.0
+[debug] [2020-05-18T14:53:02.808Z] Time:          Mon May 18 2020 19:23:02 GMT+0430 (Iran Daylight Time)
+[debug] [2020-05-18T14:53:02.808Z] ----------------------------------------------------------------------
+[debug] [2020-05-18T14:53:02.808Z] 
+[debug] [2020-05-18T14:53:02.816Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-18T14:53:02.816Z] > authorizing via signed-in user
+[debug] [2020-05-18T14:53:02.816Z] [iam] checking project ng-recipes-24478 for permissions ["firebase.projects.get"]
+[debug] [2020-05-18T14:53:02.819Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ng-recipes-24478:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-05-18T14:53:03.688Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 18 May 2020 14:53:03 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=126","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-18T14:53:03.689Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ng-recipes-24478  
+ 
+[debug] [2020-05-18T14:53:04.383Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 18 May 2020 14:53:04 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from 'D:\Angular Project'...
+[info] 
+[debug] [2020-05-18T14:53:04.387Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ng-recipes-24478/webApps/-/config  
+ 
+[debug] [2020-05-18T14:53:05.161Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 18 May 2020 14:53:05 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000

@@ -1,0 +1,52 @@
+<ng-template alertDirective></ng-template>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 ml-auto mr-auto col-xs-12">
+      <!-- <app-alert (close)="Close()" [message]="error" *ngIf="error"></app-alert> -->
+      <div *ngIf="isLoggedIn" style="text-align: center;">
+        <app-loading-spinner></app-loading-spinner>
+      </div>
+      <form
+        style="margin-top: 25px;"
+        *ngIf="!isLoggedIn"
+        #authForm="ngForm"
+        (ngSubmit)="onSubmit()"
+      >
+        <div class="form-group">
+          <label for="email" style="font-weight: bold;">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            ngModel
+            name="email"
+            email
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="pass" style="font-weight: bold;">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="pass"
+            ngModel
+            name="password"
+            required
+            minlength="6"
+          />
+        </div>
+        <button
+          class="btn btn-primary"
+          type="submit"
+          [disabled]="!authForm.valid"
+        >
+          {{ LoggingMode ? "Login" : "SignUp" }}</button
+        >|
+        <button class="btn btn-primary" type="button" (click)="onSwitchMode()">
+          Switch to {{ LoggingMode ? "SignUp" : "Login" }}
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
